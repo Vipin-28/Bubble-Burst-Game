@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(148, 223, 223);
+    margin-left:10px;
+}
+
+canvas{
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    visibility: hidden;
+}
+
+#gaunlet{
+    position: absolute;
+    top: 40%;
+    visibility: hidden;
+    left: 100%;
+    transform: translate(-100%);
+    width: calc(820px/4.2);
+    height: 326px;
+    background: url('gaunlet.png');
+}
+
+#scoreTimeDisplay{
+    font-size: 28px;
+    font-weight: 550;
+}
+.centerAlign{
+    text-align:center;
+}
+
+.inst{
+    font-size:22px;
+    color: black;
+    width: 400px;
+    text-align:justify;
+}
+
+#playBtn{
+    font-size: 30px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(64, 241, 64);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#playBtn:hover{
+    color: white;
+    background-color: yellow;
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+#instructions{
+    position: absolute;
+    animation: query 1s forwards;
+}
+
+@keyframes query {
+    from{
+        margin-left: -400px;
+    }
+    to{
+        margin-left: 10px;
+    }
+}

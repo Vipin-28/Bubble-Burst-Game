@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Bubble Burst</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <canvas id="myCanvas" width="800" height="700"></canvas>
+        <div class="centerAlign">
+            <h1 style="color:blue;">Bubble Burst</h1>
+        </div>
+        <h2>High Score:<span id="highScore"></span></h2>
+        <div id = "scoreTimeDisplay">
+            <p>Time Remaining : <span id="timer"></span></p>
+            <p>Score- <span id = "score"></span></p>
+        </div>
+        <div class="centerAlign">
+            <button onclick="play()" id="playBtn">Play</button>
+        </div>
+        <ui id="instructions">
+            <h2>Instructions</h2>
+            <li class="inst">Click the bubble as fast as possible.</div>
+            <li class="inst">You can use the <span style="color: purple;">FELIX-FELICS</span> to stop the generation of bubbles for 6sec. You can use it twice throughout 1 gameplay.</li>
+            <li class="inst">You can also <span style="color: purple;">GAUNLET</span> once. It removes half the bubbles present at that time.</li>
+            <li class="inst">If more than 60% of screen is covered up with bubbles and you don't make it less than 60% in 5sec. you are out.</li>
+            <li class="inst">You can pause/resume game with <span style="background-color: silver;">SPACE</span></li>
+        </div>
+
+        <div id="felix" style="float: right; visibility: hidden;"><img src="felix.png" alt="" height="144.8" width="100" onclick="felix()"></div>
+        <div id="gaunlet" onclick="gaunlet()"></div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
